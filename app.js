@@ -9,8 +9,8 @@ function draw(inx) {
   const ids = ['flavors', 'cones', 'toppings'];
   fullMenu[inx].forEach(a => {
     const stringTemplate = 
-      `<div class="col-3 card menu-item" onclick="findObj('${a.name}')">
-        <img class="menu-img w-100" height="100px" src="${a.image}" alt="">
+      `<div class="col-3 mt-1 menu-item bg-secondary border border-dark text-light p-3" onclick="findObj('${a.name}')">
+        <img class="menu-img w-100 border rounded" height="100px" src="${a.image}" alt="">
         <div class="fs-3"><u>${a.name}</u></div>
         <div>$${a.price}</div>
     </div>`; 
